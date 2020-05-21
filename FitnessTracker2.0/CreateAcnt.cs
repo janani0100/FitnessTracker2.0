@@ -73,14 +73,15 @@ namespace FitnessTracker2._0
             else
             {
                 
-                MessageBox.Show("Please enter all essential details now in Profile section  and set ur goals to get started!!","Fill up details now or later",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Fill in  Profile section  and set ur goals to get started!!","Fill up details now or later",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
                 username = userName.Text;
                 password = pwd.Text;
                 Program.userName = username;
                 this.Close();
-                myparent.openChildForm(new UserPage());
+                myparent.openChildForm(new UserPage(myparent));
                 myparent.toggleNav();
+             
 
 
                 

@@ -16,9 +16,11 @@ namespace FitnessTracker2._0
         public static string constr = System.Configuration.ConfigurationManager.ConnectionStrings["myConStr"].ConnectionString;
         MySqlConnection con1 = new MySqlConnection(constr);
         public static string res = "1", dob = "", cur = "";
-        public UserPage()
+        Form1 myparent;
+        public UserPage(Form1 mypar)
         {
             InitializeComponent();
+            this.myparent = mypar;
         }
         private bool phone_Text()
         {
@@ -90,6 +92,8 @@ namespace FitnessTracker2._0
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Updated Successfully");
                 con1.Close();
+                this.Close();
+                myparent.openChildForm(new HomePage(myparent));
                 //  this.Close();
 
             }
@@ -219,6 +223,8 @@ namespace FitnessTracker2._0
 
                 MessageBox.Show("Saved Successfully! Now you re ready to rock!! Please go set the goals ! You can check if our advised goals are sufficient ", "Getting Ready", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 this.Close();
+                myparent.openChildForm(new Goals(myparent));
+
 
             }
             catch (MySqlException error)
