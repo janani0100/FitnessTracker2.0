@@ -81,5 +81,10 @@ namespace FitnessTracker2._0
             myparent.openChildForm(new CreateAcnt(myparent));
             myparent.hidesub();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

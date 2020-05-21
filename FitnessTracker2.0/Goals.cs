@@ -181,7 +181,12 @@ namespace FitnessTracker2._0
                 condatabase.Open();
                 MySqlCommand cmd = new MySqlCommand(Query, condatabase);
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Added successfully");
+                //MessageBox.Show("Added successfully");
+                msgBox msg = new msgBox("Editted Successfully!!!");
+                msg.StartPosition = FormStartPosition.Manual;
+                msg.Left = 300;
+                msg.Top = 200;
+                msg.Show();
                 AddDiet.Enabled = false;
                 condatabase.Close();
                 GoalDiet();
@@ -239,7 +244,12 @@ namespace FitnessTracker2._0
                     string Query3 = "insert into ft.mustdo values(" + uid + "," + id + "," + actdur.Text + ")";
                     MySqlCommand cmd = new MySqlCommand(Query3, condatabase);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Saved Successfully");
+                    //MessageBox.Show("Saved Successfully");
+                    msgBox msg = new msgBox("Saved Successfully!!!");
+                    msg.StartPosition = FormStartPosition.Manual;
+                    msg.Left = 300;
+                    msg.Top = 200;
+                    msg.Show();
                 }
                 condatabase.Close();
             }

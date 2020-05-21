@@ -90,7 +90,12 @@ namespace FitnessTracker2._0
 
                 con1.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Updated Successfully");
+                //MessageBox.Show("Updated Successfully");
+                msgBox msg = new msgBox("Updated Successfully!!!");
+                msg.StartPosition = FormStartPosition.Manual;
+                msg.Left = 300;
+                msg.Top = 200;
+                msg.Show();
                 con1.Close();
                 this.Close();
                 myparent.openChildForm(new HomePage(myparent));
@@ -219,9 +224,15 @@ namespace FitnessTracker2._0
 
                 con1.Open();
                 cmd.ExecuteNonQuery();
-                
 
-                MessageBox.Show("Saved Successfully! Now you re ready to rock!! Please go set the goals ! You can check if our advised goals are sufficient ", "Getting Ready", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                //MessageBox.Show("Saved Successfully! Now you re ready to rock!! Please go set the goals ! You can check if our advised goals are sufficient ", "Getting Ready", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                msgBox msg = new msgBox("Profile Created Successfully!!\nSet your Goal and rock!!!!");
+                msg.StartPosition = FormStartPosition.Manual;
+                msg.Left = 300;
+                msg.Top = 200;
+                msg.Show();
                 this.Close();
                 myparent.openChildForm(new Goals(myparent));
 

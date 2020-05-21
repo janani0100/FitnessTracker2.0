@@ -175,7 +175,12 @@ namespace FitnessTracker2._0
                 condatabase.Close();
                 ActDone();
                 Console.WriteLine(logno1);
-                MessageBox.Show("Saved Successfully");
+                //MessageBox.Show("Saved Successfully");
+                msgBox msg = new msgBox("Saved Successfully!!!");
+                msg.StartPosition = FormStartPosition.Manual;
+                msg.Left = 300;
+                msg.Top = 200;
+                msg.Show();
 
             }
             catch (Exception ex)
