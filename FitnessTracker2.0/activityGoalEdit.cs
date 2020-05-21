@@ -102,7 +102,11 @@ namespace FitnessTracker2._0
                 cmd.ExecuteNonQuery();
                 condatabase.Close();
             }
-            MessageBox.Show("Saved Successfully");
+            msgBox msg = new msgBox("Updated Successfully");
+            msg.StartPosition = FormStartPosition.Manual;
+            msg.Left = 300;
+            msg.Top = 200;
+            msg.Show();
 
         }
 

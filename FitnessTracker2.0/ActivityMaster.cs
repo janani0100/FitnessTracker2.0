@@ -85,7 +85,12 @@ namespace FitnessTracker2._0
                     string cmdquery = "insert into activitymaster values(" + res + ",'" + nameBox.Text + "','" + cal.Text + "');";
                     MySqlCommand cmd = new MySqlCommand(cmdquery, con1);
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Successfully SAVED");
+                    //MessageBox.Show("Successfully SAVED");
+                    msgBox msg = new msgBox("Saved Successfully!!!");
+                    msg.StartPosition = FormStartPosition.Manual;
+                    msg.Left = 300;
+                    msg.Top = 200;
+                    msg.Show();
                     listBox1.Items.Add(res + ") " + nameBox.Text);
                     nameBox.Text = ""; cal.Text = "";
 

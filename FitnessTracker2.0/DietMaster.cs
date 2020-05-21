@@ -169,5 +169,82 @@ namespace FitnessTracker2._0
         {
 
         }
+
+        private void Save_Click_1(object sender, EventArgs e)
+        {
+            if (DietName.Text == "" && carbo.Text == "" && prot.Text == "" && vit.Text == "" && fat.Text == "" && cal.Text == "" && other.Text == "")
+            {
+                MessageBox.Show("Please fill all the details ");
+            }
+
+            // string calories = cal.ToString();
+            // string car = carbo.ToString();
+            // string pro = prot.ToString();
+            // string vitamin = vit.ToString();
+            // string fats = fat.ToString();
+            // string others = other.ToString();
+            //string others = textBox7.ToString();
+            else
+            {
+                try
+                {
+                    FindDID();
+                    string JUNK = string.Empty;
+                    if (Yes.Checked && No.Checked)
+                        MessageBox.Show("Select whether the food is junk or not! Enter one value please!");
+                    if (Yes.Checked)
+                        JUNK = "Yes";
+                    else if (No.Checked)
+                        JUNK = "No";
+                    else
+                        MessageBox.Show("Select yes or no");
+                    con1.Open();
+                    string Query = "insert into DietMaster values (" + res + ",' " + DietName.Text + " ',' " + carbo.Text + " ', ' " + prot.Text + " ',' " + vit.Text + " ',' " + fat.Text + " ', ' " + cal.Text + " ',' " + other.Text + " ',' " + JUNK + " ');";
+                    MySqlCommand cmd = new MySqlCommand(Query, con1);
+                    cmd.ExecuteNonQuery();
+                    //MessageBox.Show("Details saved successfully");
+                    msgBox msg = new msgBox("Saved Successfully!!!");
+                    msg.StartPosition = FormStartPosition.Manual;
+                    msg.Left = 300;
+                    msg.Top = 200;
+                    msg.Show();
+
+
+                    listBox1.Items.Add(res + " . " + DietName.Text);
+                    Resettingvalues();
+
+
+
+                }
+                catch (MySqlException er)
+                {
+                    MessageBox.Show(er.Message);
+                }
+                catch (SystemException err)
+                {
+                    MessageBox.Show(err.Message);
+                }
+                con1.Close();
+            }
+            void Resettingvalues()
+            {
+                DietName.Text = "";
+                carbo.Text = "";
+                prot.Text = "";
+                vit.Text = "";
+                fat.Text = "";
+                cal.Text = "";
+                other.Text = "";
+                Yes.Checked = false;
+                No.Checked = false;
+            }
+
+
+
+
+
+
+
+        }
     }
 }

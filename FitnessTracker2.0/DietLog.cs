@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Drawing.Imaging;
 
 namespace FitnessTracker2._0
 {
@@ -18,7 +19,7 @@ namespace FitnessTracker2._0
         MySqlConnection con1 = new MySqlConnection(constr);
         int logno1 = 0, check = 0;
         int uid = 0;
-
+        
         public DietLog()
         {
             InitializeComponent();
@@ -26,11 +27,12 @@ namespace FitnessTracker2._0
             FindingUser();
             dietintake();
             AlreadyTaken();
+            
 
 
         }
 
-
+       
         void FindingUser()
         {
 
@@ -213,7 +215,13 @@ namespace FitnessTracker2._0
                 cmd.ExecuteNonQuery();
                 con1.Close();
                 //dietintake();
-                MessageBox.Show("Saved Successfully");
+                //MessageBox.Show("Saved Successfully");
+                
+                msgBox msg = new msgBox("Saved Sucessfully!!!");
+                msg.StartPosition = FormStartPosition.Manual;
+                msg.Left = 300;
+                msg.Top = 200; 
+                msg.ShowDialog();
 
                 AlreadyTaken();
 

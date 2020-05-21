@@ -72,8 +72,13 @@ namespace FitnessTracker2._0
                 MessageBox.Show("Re enter password carefully!");
             else
             {
-                
-                MessageBox.Show("Please enter all essential details now in Profile section  and set ur goals to get started!!","Fill up details now or later",MessageBoxButtons.OK,MessageBoxIcon.Information);
+
+                //MessageBox.Show("Please enter all essential details now in Profile section  and set ur goals to get started!!","Fill up details now or later",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                msgBox msg = new msgBox("Account Created Suceessfully \n Click Okay to proceed further!!!");
+                msg.StartPosition = FormStartPosition.Manual;
+                msg.Left = 300;
+                msg.Top = 200;
+                msg.Show();
 
                 username = userName.Text;
                 password = pwd.Text;
@@ -95,6 +100,11 @@ namespace FitnessTracker2._0
         private void button1_Click(object sender, EventArgs e)
         {
             myparent.openChildForm(new Login(myparent));
+        }
+
+        private void CreateAcnt_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
