@@ -79,6 +79,11 @@ namespace FitnessTracker2._0
             this.Close();
         }
 
+        private void activityGoatEdit_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void button1_Click_1(object sender, EventArgs e)
         {
             int k;
