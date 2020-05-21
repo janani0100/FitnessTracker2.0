@@ -14,6 +14,7 @@ namespace FitnessTracker2._0
     {
         public static string username = "";
         public static string password = "";
+        Form1 myparent;
         static bool ValidatePassword(string passWord)
         {
             int validConditions = 0;
@@ -50,9 +51,10 @@ namespace FitnessTracker2._0
             }
             return true;
         }
-        public CreateAcnt()
+        public CreateAcnt(Form1 source)
         {
             InitializeComponent();
+            this.myparent = source;
         }
 
         private void CreateAccnt_Click1(object sender, EventArgs e)
@@ -71,11 +73,15 @@ namespace FitnessTracker2._0
             else
             {
                 
-                MessageBox.Show("Please enter all essential details now in Profile section !!","Fill up details now or later",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                MessageBox.Show("Please enter all essential details now in Profile section  and set ur goals to get started!!","Fill up details now or later",MessageBoxButtons.OK,MessageBoxIcon.Information);
 
                 username = userName.Text;
                 password = pwd.Text;
                 Program.userName = username;
+                this.Close();
+                myparent.openChildForm(new UserPage());
+                myparent.toggleNav();
+
 
                 
 
@@ -88,7 +94,7 @@ namespace FitnessTracker2._0
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            myparent.openChildForm(new Login(myparent));
         }
     }
 }

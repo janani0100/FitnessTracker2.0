@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.createAccnt = new System.Windows.Forms.Button();
@@ -37,6 +38,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // label4
@@ -67,7 +69,7 @@
             this.createAccnt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.createAccnt.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.createAccnt.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.createAccnt.Location = new System.Drawing.Point(335, 273);
+            this.createAccnt.Location = new System.Drawing.Point(335, 283);
             this.createAccnt.Name = "createAccnt";
             this.createAccnt.Size = new System.Drawing.Size(198, 35);
             this.createAccnt.TabIndex = 15;
@@ -90,6 +92,7 @@
             this.pwd.Name = "pwd";
             this.pwd.Size = new System.Drawing.Size(154, 30);
             this.pwd.TabIndex = 13;
+            this.toolTip1.SetToolTip(this.pwd, "Minimum 6 characters");
             // 
             // userName
             // 
@@ -129,6 +132,10 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Enter user name";
             // 
+            // toolTip1
+            // 
+            this.toolTip1.IsBalloon = true;
+            // 
             // CreateAcnt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -162,5 +169,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

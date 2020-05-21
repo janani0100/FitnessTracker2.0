@@ -65,14 +65,21 @@
             // 
             // AddDiet
             // 
+            this.AddDiet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.AddDiet.FlatAppearance.BorderSize = 0;
+            this.AddDiet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.AddDiet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.AddDiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddDiet.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddDiet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.AddDiet.Location = new System.Drawing.Point(81, 164);
             this.AddDiet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AddDiet.Name = "AddDiet";
             this.AddDiet.Size = new System.Drawing.Size(126, 60);
             this.AddDiet.TabIndex = 2;
             this.AddDiet.Text = "ADD";
-            this.AddDiet.UseVisualStyleBackColor = true;
+            this.AddDiet.UseVisualStyleBackColor = false;
+            this.AddDiet.Click += new System.EventHandler(this.AddDiet_Click);
             // 
             // DietGoal
             // 
@@ -82,6 +89,7 @@
             this.DietGoal.Name = "DietGoal";
             this.DietGoal.Size = new System.Drawing.Size(148, 30);
             this.DietGoal.TabIndex = 1;
+            this.DietGoal.TextChanged += new System.EventHandler(this.DietGoal_TextChanged_1);
             // 
             // label1
             // 
@@ -181,14 +189,21 @@
             // 
             // addact
             // 
+            this.addact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.addact.FlatAppearance.BorderSize = 0;
+            this.addact.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.addact.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.addact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addact.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addact.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.addact.Location = new System.Drawing.Point(151, 201);
             this.addact.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addact.Name = "addact";
             this.addact.Size = new System.Drawing.Size(130, 57);
             this.addact.TabIndex = 0;
             this.addact.Text = "ADD";
-            this.addact.UseVisualStyleBackColor = true;
+            this.addact.UseVisualStyleBackColor = false;
+            this.addact.Click += new System.EventHandler(this.addact_Click);
             // 
             // sethours
             // 
@@ -230,11 +245,13 @@
             this.actname.Name = "actname";
             this.actname.Size = new System.Drawing.Size(180, 31);
             this.actname.TabIndex = 16;
+            this.actname.SelectedIndexChanged += new System.EventHandler(this.actname_SelectedIndexChanged);
             // 
             // Goals
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(885, 588);
             this.Controls.Add(this.setacti);
             this.Controls.Add(this.groupBox1);

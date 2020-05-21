@@ -16,6 +16,8 @@ namespace FitnessTracker2._0
         {
             InitializeComponent();
             customDesign();
+            openChildForm(new Login(this));
+            this.navpanel1.Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,7 +31,7 @@ namespace FitnessTracker2._0
             dietpanel1.Visible = false;
 
         }
-        private void hidesub()
+        public void hidesub()
         {
             if (actpanel1.Visible == true)
                 actpanel1.Visible = false;
@@ -58,8 +60,16 @@ namespace FitnessTracker2._0
             showsub(actpanel1);
         }
         private Form activenow = null;
-        public void openChildForm(Form child)
+        public void toggleNav()
         {
+            if (navpanel1.Visible == false)
+                navpanel1.Visible = true;
+            else
+                navpanel1.Visible = false;
+        }
+        public void openChildForm(Form child)
+        { 
+
             if (activenow != null)
                 activenow.Close();
             activenow = child;
@@ -129,8 +139,16 @@ namespace FitnessTracker2._0
 
         private void goal_Click(object sender, EventArgs e)
         {
-            openChildForm(new Goals());
+            openChildForm(new Goals(this));
             hidesub();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new Login(this));
+            navpanel1.Visible = false;
+            Program.userName = "";
+
         }
     }
 }
