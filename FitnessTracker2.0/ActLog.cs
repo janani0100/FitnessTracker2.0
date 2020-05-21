@@ -186,7 +186,10 @@ namespace FitnessTracker2._0
 
         }
 
-       
+        private void ActLog_Load_1(object sender, EventArgs e)
+        {
+
+        }
 
         void ActDone()
         {

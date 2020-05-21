@@ -150,5 +150,16 @@ namespace FitnessTracker2._0
             Program.userName = "";
 
         }
+
+        private void childpanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void HomePage_Click(object sender, EventArgs e)
+        {
+            openChildForm(new HomePage());
+            hidesub();
+        }
     }
 }
