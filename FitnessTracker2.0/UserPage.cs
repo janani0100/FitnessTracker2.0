@@ -44,6 +44,7 @@ namespace FitnessTracker2._0
                 return true;
 
         }
+       
 
         private bool email_Text()
         {
@@ -106,6 +107,55 @@ namespace FitnessTracker2._0
 
         }
 
+        private void UserPage_Load(object sender, EventArgs e)
+        {
+            // findUID();
+            string q = "Select dob,gender,height,weight,category,phoneNo,email,userid from user where name='" + Program.userName + "';";
+            MySqlCommand cmd = new MySqlCommand(q, con1);
+            name.Text = Program.userName;
+            if (Program.userName != "")
+            {
+
+                try
+                {
+                    con1.Open();
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                    if (dr.Read())
+                    {
+                        cur = dr.GetString(7);
+                        phone.Text = dr.GetString(5);
+                        email.Text = dr.GetString(6);
+                        ht.Value = dr.GetInt16(2);
+                        wt.Value = dr.GetInt16(3);
+                        category.SelectedItem = dr.GetString(4);
+                        string temp = dr.GetString(1);
+                        if (temp == "Male")
+                            male.Checked = true;
+                        else
+                            female.Checked = true;
+                        DateTime tempo = dr.GetDateTime(0);
+                        // MessageBox.Show(tempo.ToString());
+                        // DateTime test= DateTime.ParseExact(temp, "dd-MM-yyyy hh:mm:ss", CultureInfo.InvariantCulture);
+                        //MessageBox.Show(test.ToString());
+                        agebox.Value = tempo;
+                        name.Text = Program.userName;
+                        Save.Enabled = false;
+                        Save.Visible = false;
+
+                    }
+                    else
+                    {
+                        Updatenew.Enabled = false;
+                        Updatenew.Visible = false;
+                    }
+                }
+                catch (MySqlException er)
+                { MessageBox.Show(er.Message); }
+                con1.Close();
+            }
+
+        }
+
         public int findUID()
         {
             string cmds = "Select max(userid)+1 as id from ft.user";
@@ -154,7 +204,7 @@ namespace FitnessTracker2._0
             string height = ht.Value.ToString();
             string weight = wt.Value.ToString();
 
-            string Query = "insert into user (userid,name,password,dob,gender,phoneNo,email,height,weight,category,GoalCalorieIntake) values (" + res + ",'" + name.Text + "','" + NewUser.password + "','" + dob + "','" + gender + "','" + phone.Text + "','" + email.Text + "'," + height + "," + weight + ",'" + category.SelectedItem.ToString() + "',0);";
+            string Query = "insert into user (userid,name,password,dob,gender,phoneNo,email,height,weight,category,GoalCalorieIntake) values (" + res + ",'" + name.Text + "','" + CreateAcnt.password + "','" + dob + "','" + gender + "','" + phone.Text + "','" + email.Text + "'," + height + "," + weight + ",'" + category.SelectedItem.ToString() + "',0);";
             MySqlCommand cmd = new MySqlCommand(Query, con1);
 
 
@@ -163,8 +213,10 @@ namespace FitnessTracker2._0
 
                 con1.Open();
                 cmd.ExecuteNonQuery();
-                MessageBox.Show("Saved Successfully! Now you re ready to rock!! Please go set the goals ! You can check if our advised goals are sufficient ", "Getting Ready", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 
+
+                MessageBox.Show("Saved Successfully! Now you re ready to rock!! Please go set the goals ! You can check if our advised goals are sufficient ", "Getting Ready", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                this.Close();
 
             }
             catch (MySqlException error)

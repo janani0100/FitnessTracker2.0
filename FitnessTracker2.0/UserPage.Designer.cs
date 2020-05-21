@@ -68,7 +68,7 @@
             this.Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Save.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Save.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Save.Location = new System.Drawing.Point(462, 373);
+            this.Save.Location = new System.Drawing.Point(549, 373);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(140, 38);
             this.Save.TabIndex = 7;
@@ -115,7 +115,7 @@
             this.Updatenew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Updatenew.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
             this.Updatenew.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Updatenew.Location = new System.Drawing.Point(629, 373);
+            this.Updatenew.Location = new System.Drawing.Point(549, 433);
             this.Updatenew.Name = "Updatenew";
             this.Updatenew.Size = new System.Drawing.Size(150, 38);
             this.Updatenew.TabIndex = 8;
@@ -134,7 +134,7 @@
             "Moderate physical Activiy"});
             this.category.Location = new System.Drawing.Point(149, 125);
             this.category.Name = "category";
-            this.category.Size = new System.Drawing.Size(121, 31);
+            this.category.Size = new System.Drawing.Size(168, 31);
             this.category.TabIndex = 15;
             // 
             // label3
@@ -195,9 +195,9 @@
             // phone
             // 
             this.phone.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(254)));
-            this.phone.Location = new System.Drawing.Point(145, 38);
+            this.phone.Location = new System.Drawing.Point(143, 38);
             this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(100, 30);
+            this.phone.Size = new System.Drawing.Size(144, 30);
             this.phone.TabIndex = 10;
             // 
             // label8
@@ -240,7 +240,7 @@
             this.agebox.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agebox.Location = new System.Drawing.Point(107, 73);
             this.agebox.Name = "agebox";
-            this.agebox.Size = new System.Drawing.Size(159, 30);
+            this.agebox.Size = new System.Drawing.Size(180, 30);
             this.agebox.TabIndex = 9;
             this.agebox.Value = new System.DateTime(2000, 6, 16, 0, 0, 0, 0);
             // 
@@ -337,6 +337,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "UserPage";
             this.Text = "UserPage";
+            this.Load += new System.EventHandler(this.UserPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ht)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wt)).EndInit();
             this.groupBox3.ResumeLayout(false);

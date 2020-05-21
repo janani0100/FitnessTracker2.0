@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.navpanel1 = new System.Windows.Forms.Panel();
             this.actpanel1 = new System.Windows.Forms.Panel();
             this.actnumbers = new System.Windows.Forms.Button();
@@ -45,6 +46,8 @@
             this.goal = new System.Windows.Forms.Button();
             this.logopanel1 = new System.Windows.Forms.Panel();
             this.childpanel1 = new System.Windows.Forms.Panel();
+            this.HomePage = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.navpanel1.SuspendLayout();
             this.actpanel1.SuspendLayout();
             this.dietpanel1.SuspendLayout();
@@ -54,6 +57,8 @@
             // 
             this.navpanel1.AutoScroll = true;
             this.navpanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.navpanel1.Controls.Add(this.button1);
+            this.navpanel1.Controls.Add(this.HomePage);
             this.navpanel1.Controls.Add(this.actpanel1);
             this.navpanel1.Controls.Add(this.actMain);
             this.navpanel1.Controls.Add(this.dietpanel1);
@@ -76,7 +81,7 @@
             this.actpanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.actpanel1.Location = new System.Drawing.Point(0, 499);
             this.actpanel1.Name = "actpanel1";
-            this.actpanel1.Size = new System.Drawing.Size(245, 209);
+            this.actpanel1.Size = new System.Drawing.Size(245, 169);
             this.actpanel1.TabIndex = 7;
             // 
             // actnumbers
@@ -322,6 +327,8 @@
             // 
             // logopanel1
             // 
+            this.logopanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logopanel1.BackgroundImage")));
+            this.logopanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.logopanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.logopanel1.Location = new System.Drawing.Point(0, 0);
             this.logopanel1.Name = "logopanel1";
@@ -336,6 +343,43 @@
             this.childpanel1.Name = "childpanel1";
             this.childpanel1.Size = new System.Drawing.Size(907, 644);
             this.childpanel1.TabIndex = 1;
+            // 
+            // HomePage
+            // 
+            this.HomePage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.HomePage.FlatAppearance.BorderSize = 0;
+            this.HomePage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.HomePage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.HomePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.HomePage.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HomePage.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.HomePage.Location = new System.Drawing.Point(0, 668);
+            this.HomePage.Name = "HomePage";
+            this.HomePage.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.HomePage.Size = new System.Drawing.Size(245, 51);
+            this.HomePage.TabIndex = 8;
+            this.HomePage.Text = "HomePage";
+            this.HomePage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.HomePage.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(192)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(0, 719);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(245, 51);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Logout";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -373,6 +417,8 @@
         private System.Windows.Forms.Button actmaster;
         private System.Windows.Forms.Button actlog;
         private System.Windows.Forms.Panel childpanel1;
+        private System.Windows.Forms.Button HomePage;
+        private System.Windows.Forms.Button button1;
     }
 }
 
