@@ -31,24 +31,24 @@
             this.Quotes = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pb = new System.Windows.Forms.PictureBox();
             this.pic = new System.Windows.Forms.Label();
             this.pic1 = new System.Windows.Forms.Panel();
-            this.AboutYouLabel = new System.Windows.Forms.Label();
             this.AboutYouPic = new System.Windows.Forms.PictureBox();
-            this.pb = new System.Windows.Forms.PictureBox();
+            this.AboutYouLabel = new System.Windows.Forms.Label();
             this.Quotes.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.pic1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AboutYouPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.SuspendLayout();
             // 
             // Quotes
             // 
             this.Quotes.Controls.Add(this.label1);
-            this.Quotes.Location = new System.Drawing.Point(32, 43);
+            this.Quotes.Location = new System.Drawing.Point(12, 62);
             this.Quotes.Name = "Quotes";
-            this.Quotes.Size = new System.Drawing.Size(412, 413);
+            this.Quotes.Size = new System.Drawing.Size(251, 413);
             this.Quotes.TabIndex = 0;
             // 
             // label1
@@ -65,10 +65,19 @@
             // 
             this.panel1.Controls.Add(this.pb);
             this.panel1.Controls.Add(this.pic);
-            this.panel1.Location = new System.Drawing.Point(486, 12);
+            this.panel1.Location = new System.Drawing.Point(282, 12);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(335, 256);
             this.panel1.TabIndex = 1;
+            // 
+            // pb
+            // 
+            this.pb.Image = global::FitnessTracker2._0.Properties.Resources.welcome;
+            this.pb.Location = new System.Drawing.Point(41, 50);
+            this.pb.Name = "pb";
+            this.pb.Size = new System.Drawing.Size(243, 203);
+            this.pb.TabIndex = 1;
+            this.pb.TabStop = false;
             // 
             // pic
             // 
@@ -84,11 +93,19 @@
             // 
             this.pic1.Controls.Add(this.AboutYouPic);
             this.pic1.Controls.Add(this.AboutYouLabel);
-            this.pic1.Location = new System.Drawing.Point(486, 271);
+            this.pic1.Location = new System.Drawing.Point(282, 274);
             this.pic1.Name = "pic1";
             this.pic1.Size = new System.Drawing.Size(393, 227);
             this.pic1.TabIndex = 2;
             this.pic1.Paint += new System.Windows.Forms.PaintEventHandler(this.pic1_Paint);
+            // 
+            // AboutYouPic
+            // 
+            this.AboutYouPic.Location = new System.Drawing.Point(90, 41);
+            this.AboutYouPic.Name = "AboutYouPic";
+            this.AboutYouPic.Size = new System.Drawing.Size(303, 186);
+            this.AboutYouPic.TabIndex = 1;
+            this.AboutYouPic.TabStop = false;
             // 
             // AboutYouLabel
             // 
@@ -99,29 +116,12 @@
             this.AboutYouLabel.Size = new System.Drawing.Size(0, 19);
             this.AboutYouLabel.TabIndex = 0;
             // 
-            // AboutYouPic
-            // 
-            this.AboutYouPic.Location = new System.Drawing.Point(90, 41);
-            this.AboutYouPic.Name = "AboutYouPic";
-            this.AboutYouPic.Size = new System.Drawing.Size(303, 186);
-            this.AboutYouPic.TabIndex = 1;
-            this.AboutYouPic.TabStop = false;
-            // 
-            // pb
-            // 
-            this.pb.Image = global::FitnessTracker2._0.Properties.Resources.welcome;
-            this.pb.Location = new System.Drawing.Point(41, 50);
-            this.pb.Name = "pb";
-            this.pb.Size = new System.Drawing.Size(243, 203);
-            this.pb.TabIndex = 1;
-            this.pb.TabStop = false;
-            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(891, 615);
+            this.ClientSize = new System.Drawing.Size(891, 605);
             this.Controls.Add(this.pic1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.Quotes);
@@ -132,10 +132,10 @@
             this.Quotes.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.pic1.ResumeLayout(false);
             this.pic1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.AboutYouPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb)).EndInit();
             this.ResumeLayout(false);
 
         }

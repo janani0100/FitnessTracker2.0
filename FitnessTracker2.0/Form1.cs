@@ -165,7 +165,9 @@ namespace FitnessTracker2._0
 
         }
 
-        private void HomePage_Click(object sender, EventArgs e)
+       
+
+        private void HomePage_Click_1(object sender, EventArgs e)
         {
             openChildForm(new HomePage());
             hidesub();
