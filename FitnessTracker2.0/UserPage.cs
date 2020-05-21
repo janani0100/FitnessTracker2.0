@@ -156,6 +156,8 @@ namespace FitnessTracker2._0
 
         }
 
+       
+
         public int findUID()
         {
             string cmds = "Select max(userid)+1 as id from ft.user";

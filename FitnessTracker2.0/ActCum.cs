@@ -28,10 +28,13 @@ namespace FitnessTracker2._0
             
         }
 
-        private void Go_Click(object sender, EventArgs e)
+        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             FillDurGraph(yearBox.Text, comboBox1.SelectedIndex.ToString());
+
         }
+
         void FillDurGraph(string year, string month)
         {
             chart1.Series[0].IsXValueIndexed = false;
