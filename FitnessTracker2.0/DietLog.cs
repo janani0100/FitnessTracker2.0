@@ -100,9 +100,10 @@ namespace FitnessTracker2._0
             con1.Close();
         }
 
-        private void dietsubmit_Click(object sender, EventArgs e)
-        {
+        
 
+        private void dietsubmit_Click_1(object sender, EventArgs e)
+        {
             int id = 0;
             decimal carbo = 0, protein = 0, vitamin = 0, fat = 0, calories = 0;
             con1.Open();
@@ -224,10 +225,9 @@ namespace FitnessTracker2._0
                 MessageBox.Show(ex.Message);
             }
             con1.Close();
-
         }
 
-
+        
         void dietintake()
         {
             con1.Open();
