@@ -55,10 +55,7 @@ namespace FitnessTracker2._0
             showsub(dietpanel1);
         }
 
-        private void actMain_Click(object sender, EventArgs e)
-        {
-            showsub(actpanel1);
-        }
+       
         private Form activenow = null;
         public void toggleNav()
         {
@@ -82,72 +79,84 @@ namespace FitnessTracker2._0
             child.Show();
         }
 
-        private void dietlog_Click(object sender, EventArgs e)
+        private void HomePage_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void goal_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new Goals(this));
+            hidesub();
+        }
+
+        private void profile_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new UserPage());
+            hidesub();
+        }
+
+        private void dietlog_Click_1(object sender, EventArgs e)
         {
             openChildForm(new DietLog());
             hidesub();
         }
 
-        private void newdiet_Click(object sender, EventArgs e)
+        private void newdiet_Click_1(object sender, EventArgs e)
         {
             openChildForm(new DietMaster());
             hidesub();
         }
 
-        private void actlog_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ActLog());
-            hidesub();
-        }
-
-        private void actmaster_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ActivityMaster() );
-            hidesub();
-        }
-
-        private void acttoday_Click(object sender, EventArgs e)
-        {
-            openChildForm(new ActDReport());
-            hidesub();
-        }
-
-        private void diettoday_Click(object sender, EventArgs e)
+        private void diettoday_Click_1(object sender, EventArgs e)
         {
             openChildForm(new DDietToday());
             hidesub();
 
         }
 
-        private void numbersdiet_Click(object sender, EventArgs e)
+        private void numbersdiet_Click_1(object sender, EventArgs e)
         {
             openChildForm(new dietCum());
             hidesub();
         }
 
-        private void actnumbers_Click(object sender, EventArgs e)
+        private void actMain_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new ActCum());
+            showsub(actpanel1);
+
+        }
+
+        private void acttoday_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new ActDReport());
+            hidesub();
+
+        }
+
+        private void actmaster_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new ActivityMaster());
             hidesub();
         }
 
-        private void profile_Click(object sender, EventArgs e)
+        private void actlog_Click_1(object sender, EventArgs e)
         {
-            openChildForm(new UserPage());
+            openChildForm(new ActLog());
             hidesub();
         }
 
-        private void goal_Click(object sender, EventArgs e)
-        {
-            openChildForm(new Goals(this));
-            hidesub();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
             openChildForm(new Login(this));
             navpanel1.Visible = false;
             Program.userName = "";
+        }
+
+        private void actnumbers_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new ActCum());
+            hidesub();
 
         }
     }

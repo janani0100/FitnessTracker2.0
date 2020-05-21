@@ -186,7 +186,6 @@ namespace FitnessTracker2._0
 
         }
 
-       
 
         void ActDone()
         {
