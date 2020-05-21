@@ -92,6 +92,8 @@ namespace FitnessTracker2._0
                     label.Text = dr.GetString("ACT");
                     label.AutoSize = true;
                     label.Location = new Point(26, 75 + 25 * i);
+                    label.ForeColor = System.Drawing.Color.Black;
+                    
 
                     this.groupBox1.Controls.Add(label);
 
@@ -100,6 +102,7 @@ namespace FitnessTracker2._0
                     l1.Text = dr.GetString("goal");
                     l1.Location = new Point(130, 75 + 25 * i);
                     l1.AutoSize = true;
+                    l1.ForeColor = System.Drawing.Color.Black;
 
                     this.groupBox1.Controls.Add(l1);
 
@@ -113,6 +116,7 @@ namespace FitnessTracker2._0
                     l2.Text = val;
                     l2.AutoSize = true;
                     l2.Location = new Point(220, 75 + 25 * i);
+                    l2.ForeColor = System.Drawing.Color.Black;
 
                     this.groupBox1.Controls.Add(l2);
 
@@ -141,7 +145,7 @@ namespace FitnessTracker2._0
 
                     l3.AutoSize = true;
                     l3.Location = new Point(333, 75 + 25 * i);
-
+                   // l3.ForeColor = System.Drawing.Color.Black;
                     this.groupBox1.Controls.Add(l3);
                 }
 
