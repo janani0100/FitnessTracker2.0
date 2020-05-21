@@ -104,5 +104,9 @@ namespace FitnessTracker2._0
             }
         }
 
+        private void nameBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

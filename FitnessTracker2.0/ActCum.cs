@@ -35,6 +35,11 @@ namespace FitnessTracker2._0
 
         }
 
+        private void ActCum_Load(object sender, EventArgs e)
+        {
+
+        }
+
         void FillDurGraph(string year, string month)
         {
             chart1.Series[0].IsXValueIndexed = false;

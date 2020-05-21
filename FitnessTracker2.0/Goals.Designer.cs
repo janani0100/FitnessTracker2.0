@@ -55,11 +55,11 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.groupBox1.Location = new System.Drawing.Point(42, 323);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(37, 258);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(417, 238);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(371, 190);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Diet Goal";
@@ -73,10 +73,10 @@
             this.AddDiet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.AddDiet.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddDiet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddDiet.Location = new System.Drawing.Point(123, 168);
-            this.AddDiet.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddDiet.Location = new System.Drawing.Point(109, 134);
+            this.AddDiet.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddDiet.Name = "AddDiet";
-            this.AddDiet.Size = new System.Drawing.Size(126, 60);
+            this.AddDiet.Size = new System.Drawing.Size(112, 48);
             this.AddDiet.TabIndex = 2;
             this.AddDiet.Text = "ADD";
             this.AddDiet.UseVisualStyleBackColor = false;
@@ -85,10 +85,10 @@
             // DietGoal
             // 
             this.DietGoal.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DietGoal.Location = new System.Drawing.Point(210, 81);
-            this.DietGoal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.DietGoal.Location = new System.Drawing.Point(187, 65);
+            this.DietGoal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DietGoal.Name = "DietGoal";
-            this.DietGoal.Size = new System.Drawing.Size(148, 35);
+            this.DietGoal.Size = new System.Drawing.Size(132, 31);
             this.DietGoal.TabIndex = 1;
             this.DietGoal.TextChanged += new System.EventHandler(this.DietGoal_TextChanged_1);
             // 
@@ -96,10 +96,10 @@
             // 
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(26, 65);
+            this.label1.Location = new System.Drawing.Point(23, 52);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 66);
+            this.label1.Size = new System.Drawing.Size(147, 53);
             this.label1.TabIndex = 0;
             this.label1.Text = "Calories To Be Taken";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -108,20 +108,20 @@
             // 
             this.SetUrGoal.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SetUrGoal.FormattingEnabled = true;
-            this.SetUrGoal.Location = new System.Drawing.Point(539, 89);
-            this.SetUrGoal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SetUrGoal.Location = new System.Drawing.Point(479, 71);
+            this.SetUrGoal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SetUrGoal.Name = "SetUrGoal";
-            this.SetUrGoal.Size = new System.Drawing.Size(273, 166);
+            this.SetUrGoal.Size = new System.Drawing.Size(243, 130);
             this.SetUrGoal.TabIndex = 35;
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(5, 218);
+            this.linkLabel1.Location = new System.Drawing.Point(4, 174);
             this.linkLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(146, 28);
+            this.linkLabel1.Size = new System.Drawing.Size(127, 24);
             this.linkLabel1.TabIndex = 34;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Edit Your Goal";
@@ -131,10 +131,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(-213, 252);
+            this.label3.Location = new System.Drawing.Point(-189, 202);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(139, 23);
+            this.label3.Size = new System.Drawing.Size(122, 19);
             this.label3.TabIndex = 33;
             this.label3.Text = "To edit your goal,";
             // 
@@ -143,20 +143,20 @@
             this.goal.AutoSize = true;
             this.goal.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.goal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.goal.Location = new System.Drawing.Point(535, 25);
+            this.goal.Location = new System.Drawing.Point(476, 20);
             this.goal.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.goal.Name = "goal";
-            this.goal.Size = new System.Drawing.Size(294, 35);
+            this.goal.Size = new System.Drawing.Size(248, 29);
             this.goal.TabIndex = 32;
             this.goal.Text = "Your Daily Activity Goal";
             // 
             // AddDietGoal
             // 
             this.AddDietGoal.Font = new System.Drawing.Font("Comic Sans MS", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddDietGoal.Location = new System.Drawing.Point(539, 385);
-            this.AddDietGoal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.AddDietGoal.Location = new System.Drawing.Point(479, 308);
+            this.AddDietGoal.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AddDietGoal.Name = "AddDietGoal";
-            this.AddDietGoal.Size = new System.Drawing.Size(273, 152);
+            this.AddDietGoal.Size = new System.Drawing.Size(243, 122);
             this.AddDietGoal.TabIndex = 38;
             this.AddDietGoal.Text = "";
             // 
@@ -171,11 +171,11 @@
             this.setacti.Controls.Add(this.actname);
             this.setacti.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.setacti.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.setacti.Location = new System.Drawing.Point(36, 14);
-            this.setacti.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.setacti.Location = new System.Drawing.Point(32, 11);
+            this.setacti.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.setacti.Name = "setacti";
-            this.setacti.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.setacti.Size = new System.Drawing.Size(423, 281);
+            this.setacti.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.setacti.Size = new System.Drawing.Size(376, 225);
             this.setacti.TabIndex = 39;
             this.setacti.TabStop = false;
             this.setacti.Text = "Add activity to your Goal";
@@ -189,10 +189,10 @@
             this.addact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addact.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addact.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addact.Location = new System.Drawing.Point(199, 201);
-            this.addact.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.addact.Location = new System.Drawing.Point(177, 161);
+            this.addact.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addact.Name = "addact";
-            this.addact.Size = new System.Drawing.Size(130, 57);
+            this.addact.Size = new System.Drawing.Size(116, 46);
             this.addact.TabIndex = 0;
             this.addact.Text = "ADD";
             this.addact.UseVisualStyleBackColor = false;
@@ -203,20 +203,20 @@
             this.sethours.AutoSize = true;
             this.sethours.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sethours.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.sethours.Location = new System.Drawing.Point(2, 132);
+            this.sethours.Location = new System.Drawing.Point(2, 106);
             this.sethours.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.sethours.Name = "sethours";
-            this.sethours.Size = new System.Drawing.Size(164, 28);
+            this.sethours.Size = new System.Drawing.Size(140, 24);
             this.sethours.TabIndex = 20;
             this.sethours.Text = "Duration (in min)";
             // 
             // actdur
             // 
             this.actdur.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.actdur.Location = new System.Drawing.Point(199, 132);
-            this.actdur.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.actdur.Location = new System.Drawing.Point(177, 106);
+            this.actdur.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.actdur.Name = "actdur";
-            this.actdur.Size = new System.Drawing.Size(148, 35);
+            this.actdur.Size = new System.Drawing.Size(132, 31);
             this.actdur.TabIndex = 21;
             // 
             // label2
@@ -224,10 +224,10 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(8, 64);
+            this.label2.Location = new System.Drawing.Point(7, 51);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(142, 28);
+            this.label2.Size = new System.Drawing.Size(123, 24);
             this.label2.TabIndex = 15;
             this.label2.Text = "Activity Name";
             // 
@@ -235,10 +235,10 @@
             // 
             this.actname.Font = new System.Drawing.Font("Comic Sans MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actname.FormattingEnabled = true;
-            this.actname.Location = new System.Drawing.Point(199, 56);
-            this.actname.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.actname.Location = new System.Drawing.Point(177, 45);
+            this.actname.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.actname.Name = "actname";
-            this.actname.Size = new System.Drawing.Size(180, 36);
+            this.actname.Size = new System.Drawing.Size(160, 32);
             this.actname.TabIndex = 16;
             this.actname.SelectedIndexChanged += new System.EventHandler(this.actname_SelectedIndexChanged);
             // 
@@ -247,25 +247,26 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.label5.Location = new System.Drawing.Point(535, 323);
+            this.label5.Location = new System.Drawing.Point(476, 258);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 35);
+            this.label5.Size = new System.Drawing.Size(212, 29);
             this.label5.TabIndex = 40;
             this.label5.Text = "Your Daily Diet Goal";
             // 
             // Goals
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(885, 588);
+            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.ClientSize = new System.Drawing.Size(787, 470);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.setacti);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.SetUrGoal);
             this.Controls.Add(this.goal);
             this.Controls.Add(this.AddDietGoal);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Goals";
             this.Text = "Goals";
             this.groupBox1.ResumeLayout(false);
